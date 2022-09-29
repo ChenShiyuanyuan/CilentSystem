@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chen.mapper.ClientMapper">
+
+    <insert id="addClient" parameterType="Client">
+        insert into client_system.client (id,password,name,sex,phone,balance) value (#{id},#{password},#{name},#{sex},#{phone},#{balance});
+    </insert>
+
+    <delete id="deleteClientById" parameterType="int">
+        delete from client_system.client where id = #{id};
+    </delete>
+
+    <update id="updateClient" parameterType="Client">
+        update client_system.client set id = #{id},password = #{password},name = #{name},sex = #{sex},phone = #{phone},balance = #{balance} where id = #{id};
+    </update>
+
+    <select id="queryClientById" resultType="Client">
+        select * from client_system.client where id = #{id};
+    </select>
+
+    <select id="queryAllClient" resultType="Client">
+        select * from client_system.client;
+    </select>
+
+    <select id="queryClientByName" resultType="Client">
+        select * from client_system.client where name = #{name}
+    </select>
+
+</mapper>
