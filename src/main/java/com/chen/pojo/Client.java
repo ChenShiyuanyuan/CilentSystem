@@ -1,7 +1,7 @@
 package com.chen.pojo;
 
 /**
- * @author 东辉
+ * @author donghui
  * guigu_SpringMVC
  */
 public class Client{
