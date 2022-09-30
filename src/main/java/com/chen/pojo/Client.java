@@ -3,6 +3,8 @@ package com.chen.pojo;
 /**
  * @author 陈士圆
  * guigu_SpringMVC
+ *
+ * guigu_SpringMVC
  */
 public class Client{
 
