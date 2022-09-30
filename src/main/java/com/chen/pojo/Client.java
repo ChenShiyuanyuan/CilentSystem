@@ -4,6 +4,11 @@ package com.chen.pojo;
  * @author 陈士圆
  * guigu_SpringMVC
  */
+
+/**
+ * @author 陈士圆
+ * guigu_SpringMVC
+ */
 public class Client{
 
     private int id;
